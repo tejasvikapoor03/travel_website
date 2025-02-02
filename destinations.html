@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Destinations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        header nav ul {
+            display: flex;
+            list-style: none;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        header nav ul li a:hover {
+            color: #ffcc00; /* Highlight color on hover */
+        }
+	section {
+            background-color: #005f99;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-bottom: 7px solid #004d40;
+        }
+        section h1 {
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .destination {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            background: white;
+            margin-bottom: 20px;
+        }
+        .destination:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .destination img {
+            width: 100%;
+            
+        }
+        .destination-info {
+            padding: 15px;
+        }
+        .destination-info h2 {
+            margin-bottom: 10px;
+            color: #005f99;
+            font-size: 1.5rem;
+        }
+        .destination-info p {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        .destination-info a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #005f99;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 0.9rem;
+        }
+        .destination-info a:hover {
+            background-color: #003366;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">TRAVELIX</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="iteneraries.html">Itineraries</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact1.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+	 <h1>Explore Amazing Destinations</h1>
+</section>
+
+<div class="container">
+    <div class="destination">
+        <img src="./istanbul.jpg" height="180px" alt="Istanbul, Turkey">
+        <div class="destination-info">
+            <h2>Istanbul, Turkey</h2>
+            <p>Experience the rich history and culture of this unique city that straddles two continents.</p>
+            <a href="https://www.getyourguide.com/istanbul-l56/" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="./newyork.jpg" alt="New York, USA">
+        <div class="destination-info">
+            <h2>New York, USA</h2>
+            <p>Explore the iconic city that never sleeps, from the Statue of Liberty to Central Park.</p>
+            <a href="https://www.getyourguide.com/new-york-city-l59/" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="./paris.jpg" height="180px" alt="Paris, France">
+        <div class="destination-info">
+            <h2>Paris, France</h2>
+            <p>Discover the City of Light, famous for its art, fashion, and romantic atmosphere.</p>
+            <a href="https://www.getyourguide.com/new-york-city-l59/ target="_blank"">Learn More</a>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="./rome.jpg" height="180px" alt="Rome, Italy">
+        <div class="destination-info">
+            <h2>Rome, Italy</h2>
+            <p>Explore the ancient ruins of the Roman Empire, including the Colosseum and the Pantheon.</p>
+            <a href="https://www.getyourguide.com/rome-l33/ target="_blank"">Learn More</a>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="./tokyo.jpg" alt="Tokyo, Japan">
+        <div class="destination-info">
+            <h2>Tokyo, Japan</h2>
+            <p>Experience the vibrant culture, delicious cuisine, and unique blend of tradition and modernity.</p>
+            <a href="https://www.getyourguide.com/tokyo-l193/" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+        <div class="destination">
+        <img src="./spain.jpg" alt="Barcelona, Spain">
+        <div class="destination-info">
+            <h2>Barcelona, Spain</h2>
+            <p>Discover the stunning architecture of Antoni Gaudí, including the iconic Sagrada Família.</p>
+            <a href="https://www.getyourguide.com/-l45?cmp=ga&cq_src=google_ads&cq_cmp=15508247026&cq_con=132158666098&cq_term=barcelona+spain&cq_net=g&cq_plt=gp&campaign_id=15508247026&adgroup_id=132158666098&target_id=kwd-18214352&loc_physical_ms=9300262&match_type=e&ad_id=581827872463&keyword=barcelona+spain&device=c&partner_id=CD951&gad_source=1&gclid=CjwKCAiAl4a6BhBqEiwAqvrqumZvvmAjTkmQ0WrFozpPNGpXhR-ZK2GzwTxRq7tqjTA_pGUsz64yUBoCt_kQAvD_BwE" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="./capetown.jpg" alt="Cape Town South Africa">
+        <div class="destination-info">
+            <h2>Cape Town</h2>
+            <p>Marvel at the breathtaking views from Table Mountain and explore the vibrant V&A Waterfront.</p>
+            <a href="https://www.getyourguide.com/cape-town-l103/" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="./sidney.jpg" alt="Sydney, Australia">
+        <div class="destination-info">
+            <h2>Sydney, Australia</h2>
+            <p>Enjoy the iconic Sydney Opera House and the Sydney Harbour Bridge.</p>
+            <a href="https://www.getyourguide.com/sydney-l200/" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+   
+    <div class="destination">
+        <img src="./bankok.jpg" height="180px" alt="Bangkok, Thailand">
+        <div class="destination-info">
+            <h2>Bangkok, Thailand</h2>
+            <p>Experience the vibrant culture and delicious street food of this bustling Asian city.</p>
+            <a href="https://www.getyourguide.com/bangkok-l169/ target="_blank"">Learn More</a>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="./beijing.jpg" alt="Beijing, China">
+        <div class="destination-info">
+            <h2>Beijing, China</h2>
+            <p>Discover the ancient history and modern architecture of China's capital city.</p>
+            <a href="https://www.getyourguide.com/beijing-l186/" target="_blank">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Explore Destinations. All rights reserved.</p>
+    <p><a href="#">Contact Us</a> | <a href="#">Privacy Policy</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Itineraries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin: 20px 0;
+    color: #005f99;
+    border-bottom: 2px solid #005f99;
+    padding-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+.itinerary {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.itinerary:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.day {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.day h4 {
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 5px solid #005f99;
+}
+
+footer a {
+    color: #80cbc4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.destination {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.destination:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">TRAVELIX</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="iteneraries.html">Itineraries</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact1.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Itineraries</h2>
+        <div class="itinerary">
+            <h3>3-Day City Break</h3>
+                        <div class="day">
+                <h4>Day 1: Arrival</h4>
+                <p><strong>Activities:</strong> Arrive at the city, check into your hotel, explore local attractions.</p>
+                <p><strong>Estimated Cost:</strong> $150 (hotel + meals)</p>
+                <p><strong>Transport:</strong> Public transport or walking.</p>
+                <p><strong>Travel Tips:</strong> Get a city map and plan your route.</p>
+            </div>
+            <div class="day">
+                <h4>Day 2: Cultural Experience</h4>
+                <p><strong>Activities:</strong> Visit museums, art galleries, and local markets.</p>
+                <p><strong>Estimated Cost:</strong> $100 (entrance fees + meals)</p>
+                <p><strong>Transport:</strong> Use public transport or rent a bike.</p>
+                <p><strong>Travel Tips:</strong> Check for free entry days at museums.</p>
+            </div>
+            <div class="day">
+                <h4>Day 3: Leisure and Departure</h4>
+                <p><strong>Activities:</strong> Relax at a park, do some shopping, and depart.</p>
+                <p><strong>Estimated Cost:</strong> $50 (meals + shopping)</p>
+                <p><strong>Transport:</strong> Taxi to the airport.</p>
+                <p><strong>Travel Tips:</strong> Leave early to avoid traffic.</p>
+            </div>
+        </div>
+
+        <div class="itinerary">
+            <h3>7-Day Road Trip</h3>
+            <div class="day">
+                <h4>Day 1: Departure and First Stop</h4>
+                <p><strong>Activities:</strong> Depart from home, drive to the first destination.</p>
+                <p><strong>Estimated Cost:</strong> $200 (gas + meals)</p>
+                <p><strong>Transport:</strong> Car rental or personal vehicle.</p>
+                <p><strong>Travel Tips:</strong> Check your vehicle's condition before departure.</p>
+            </div>
+            <div class="day">
+                <h4>Day 2: Explore Destination 1</h4>
+                <p><strong>Activities:</strong> Visit local attractions, enjoy local cuisine.</p>
+                <p><strong>Estimated Cost:</strong> $150 (meals + activities)</p>
+                <p><strong>Transport:</strong> Local transport or walking.</p>
+                <p><strong>Travel Tips:</strong> Try to book activities in advance.</p>
+            </div>
+            <div class="day">
+                <h4>Day 3: Drive to Destination 2</h4>
+                <p><strong>Activities:</strong> Scenic drive, stop at viewpoints.</p>
+                <p><strong>Estimated Cost:</strong> $100 (gas + meals)</p>
+                <p><strong>Transport:</strong> Car rental or personal vehicle.</p>
+                <p><strong>Travel Tips:</strong> Download offline maps for navigation.</p>
+            </div>
+            <div class="day">
+                <h4>Day 4: Explore Destination 2</h4>
+                <p><strong>Activities:</strong> Hiking, visiting parks, local tours.</p>
+                <p><strong>Estimated Cost:</strong> $120 (entrance fees + meals)</p>
+                <p><strong>Transport:</strong> Local transport or walking.</p>
+                <p><strong>Travel Tips:</strong> Bring water and snacks for hikes.</p>
+            </div>
+            <div class="day">
+                <h4>Day 5: Drive to Destination 3</h4>
+                <p><strong>Activities:</strong> Drive to the next destination, enjoy the journey.</p>
+                <p><strong>Estimated Cost:</strong> $100 (gas + meals)</p>
+                <p><strong>Transport:</strong> Car rental or personal vehicle.</p>
+                <p><strong>Travel Tips:</strong> Take breaks to avoid fatigue.</p>
+            </div>
+            <div class="day">
+                <h4>Day 6: Explore Destination 3</h4>
+                <p><strong>Activities:</strong> Visit attractions, enjoy local culture.</p>
+                <p><strong>Estimated Cost:</strong> $130 (meals + activities)</p>
+                <p><strong>Transport:</strong> Local transport or walking.</p>
+                <p><strong>Travel Tips:</strong> Engage with locals for hidden gems.</p>
+            </div>
+            <div class="day">
+                <h4>Day 7: Return Home</h4>
+                <p><strong>Activities:</strong> Drive back home, reflect on the trip.</p>
+                <p><strong>Estimated Cost:</strong> $200 (gas + meals)</p>
+                <p><strong>Transport:</strong> Car rental or personal vehicle.</p>
+                <p><strong>Travel Tips:</strong> Plan your route to avoid traffic.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Destinations</h2>
+        <div class="destination">
+            <h3>Tokyo, Japan</h3>
+            <p>Experience the vibrant culture, delicious cuisine, and unique blend of tradition and modernity. Must-see attractions include the historic Senso-ji Temple, the bustling Shibuya Crossing, and the serene Meiji Shrine. Enjoy local delicacies like sushi and ramen while exploring the city's diverse neighborhoods.</p>
+        </div>
+        <div class="destination">
+            <h3>Barcelona, Spain</h3>
+            <p>Discover the stunning architecture of Antoni Gaudí, including the iconic Sagrada Família and Park Güell. Stroll along La Rambla, indulge in tapas, and soak up the sun on the beautiful beaches.</p>
+        </div>
+        <div class="destination">
+            <h3>Cape Town, South Africa</h3>
+            <p>Marvel at the breathtaking views from Table Mountain, visit the historic Robben Island, and explore the vibrant V&A Waterfront. Don't miss the chance to taste local wines in the nearby Stellenbosch region.</p>
+        </div>
+        <div class="destination">
+            <h3>Sydney, Australia</h3>
+            <p>Enjoy the iconic Sydney Opera House and the Sydney Harbour Bridge. Relax on Bondi Beach, explore the Royal Botanic Garden, and take a ferry to Manly for stunning coastal views.</p>
+        </div>
+        <div class="destination">
+            <h3>Istanbul, Turkey</h3>
+            <p>Experience the rich history and culture of this unique city that straddles two continents. Visit the majestic Hagia Sophia, the bustling Grand Bazaar, and the beautiful Blue Mosque while savoring traditional Turkish cuisine.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Travelix. All rights reserved.</p>
+    <p><a href="">Contact Us</a> | <a href="">Privacy Policy</a></p>
+</footer>
+</body>
+</html>

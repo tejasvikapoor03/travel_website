@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        header nav ul {
+            display: flex;
+            list-style: none;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        header nav ul li a:hover {
+            color: #ffcc00;
+            text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+        }
+        section {
+            background-color: #005f99;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-bottom: 7px solid #004d40;
+        }
+        section h1 {
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #005f99;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        .blog-post {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            transition: transform 0.2s, box-shadow 0.2s;
+            padding: 15px;
+        }
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .blog-post img {
+            width: 70%; /* Reduced image size */
+            height: 350px;
+            border-radius: 5px;
+            margin: 0 auto; /* Center the image */
+            display: block; /* Center the image */
+        }
+        .blog-post h2 {
+            margin: 15px 0;
+            color: #005f99;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .blog-post p {
+            margin: 0 0 15px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            text-align: justify; /* Justify text for better readability */
+        }
+        .blog-post a {
+            display: inline-block;
+            margin: 15px auto;
+            padding: 10px 15px;
+            background-color: #005f99;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-align: center; /* Center the link */
+        }
+	        .blog-post a:hover {
+            background-color: #004d40;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header nav ul li {
+                margin: 5px 0;
+            }
+            .blog-post {
+                margin-bottom: 20px;
+            }
+            .blog-post h2 {
+                font-size: 1.3rem;
+            }
+            .blog-post p {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">TRAVELIX</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="iteneraries.html">Itineraries</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact1.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h1>Travel Blog</h1>
+    <p>Your guide to the world's most amazing destinations</p>
+</section>
+
+<div class="container">
+    <h2>Recent Blog Posts</h2>
+    <div class="blog-post">
+        <h2>Paris, France: The City of Love and Romance</h2>
+        <img src="./paris.jpg" alt="Paris, France">
+        <p>Paris is a city that is steeped in history and romance. From the iconic Eiffel Tower to the beautiful Louvre Museum, Paris has something for everyone.</p>
+        <p>Read more about my adventures in Paris...</p>
+        <a href="https://weareglobaltravellers.com/2022/12/best-things-to-do-paris/" target="_blank">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h2>Tokyo, Japan: A City of Contrasts</h2>
+        <img src="./tokyo.jpg" alt="Tokyo, Japan">
+        <p>Tokyo is a city that seamlessly blends traditional and modern culture. From ancient temples to neon-lit skyscrapers, Tokyo has something for everyone.</p>
+        <p>Read more about my adventures in Tokyo...</p>
+        <a href="https://weareglobaltravellers.com/2017/10/tokyo-guide/" target="_blank">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h2>Barcelona, Spain: A City of Architecture and Beaches</h2>
+        <img src="./spain.jpg" alt="Barcelona, Spain">
+        <p>Barcelona is a city that is steeped in history and architecture. From the iconic Sagrada Família to the beautiful Barceloneta beach, Barcelona has something for everyone.</p>
+        <p>Read more about my adventures in Barcelona...</p>
+        <a href="https://weareglobaltravellers.com/2019/08/barcelona-guide/" target="_blank">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h2>Cape Town, South Africa: A City of Natural Beauty</h2>
+        <img src="./capetown.jpg" alt="Cape Town, South Africa">
+        <p>Cape Town is a city that is surrounded by natural beauty. From Table Mountain to Cape of Good Hope, Cape Town has some of the most stunning landscapes in the world.</p>
+        <p>Read more about my adventures in Cape Town...</p>
+        <a href="https://johnnyafrica.com/ultimate-cape-town-travel-guide/"target="_blank">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h2>New York City, USA: The City That Never Sleeps</h2>
+        <img src="./newyork.jpg" alt="New York City, USA">
+        <p>New York City is a city that is always on the go. From the bright lights of Times Square to the peaceful greenery of Central Park, NYC has something for everyone.</p>
+        <p>Read more about my adventures in NYC...</p>
+        <a href="https://weareglobaltravellers.com/2024/02/free-things-to-do-new-york-city/" target="_blank">Read More</a>
+    </div>
+
+   
+
+    <div class="blog-post">
+        <h2>Sydney, Australia: A City of Beaches and Icons</h2>
+        <img src="./sidney.jpg" alt="Sydney, Australia">
+        <p>Sydney is a city that is famous for its beautiful beaches and iconic landmarks. From Bondi Beach to the Sydney Opera House, Sydney has something for everyone.</p>
+        <p>Read more about my adventures in Sydney...</p>
+        <a href="https://weareglobaltravellers.com/2020/05/sydney-travel-guide/" target="_blank">Read More</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Travel Blog</p>
+    <a href="#">Contact Us</a>
+    <a href="#">About Us</a>
+    <a href="#">Subscribe to our newsletter</a>
+</footer>
+</body>
+</html>

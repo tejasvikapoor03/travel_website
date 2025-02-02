@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        header nav ul {
+            display: flex;
+            list-style: none;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        header nav ul li a:hover {
+            color: #ffcc00; }
+        section {
+            background-color: #005f99;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-bottom: 7px solid #004d40;
+        }
+        section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 40px 90px rgba(0, 0, 0, 0.2);
+        }
+        .package-type {
+            margin-bottom: 40px;
+        }
+        .package-type h2 {
+            margin-bottom: 10px;
+            color: #003060;
+            font-size: 1.8rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .package-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .package-item {
+            flex-basis: calc(30% - 20px);
+            margin-bottom: 20px;
+            background: #ffffff;
+            border: 2px solid #003060; /* Box border */
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Shadow for the box */
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .package-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 60px 75px rgba(0, 0, 0, 0.3); 
+        }
+        .package-item h3 {
+            margin-bottom: 10px;
+            color: #003060;
+            font-size: 1.5rem;
+        }
+        .package-item p {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .package-item a {
+            display: inline-block;
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .package-item a:hover {
+            background-color: #004d40;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #80cbc4;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">TRAVELIX</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="iteneraries.html">Itineraries</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact1.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h1>Travel Packages</h1>
+    <p>Find the perfect package for your next adventure</p>
+</section>
+
+<div class="container">
+    <div class="package-type">
+        <h2>Solo Packages</h2>
+        <ul class="package-list">
+            <li class="package-item">
+                <h3>Bali, Indonesia</h3>
+                <p>7 days of adventure and relaxation in paradise</p>
+                <a href="https://pickyourtrail.com/vacations/bali?utm_source=google&utm_medium=cpc&utm_campaign=Google_PPC-Search_Bali_itinerary&utm_keyword=best%20bali%20itinerary%207%20days&utm_content=19932005400&utm_feeditemid=161437719062&utm_targetid=kwd-824890764200&utm_creative=704627614219&utm_adposition=&gad_source=1&gclid=CjwKCAiAl4a6BhBqEiwAqvrqui7xuxUEmTJImWgcCE6R2bdCzV0kFqJUaBMU3AYpe4qWNVSUMLa6oRoCI_oQAvD_BwE" target="_blank">Learn More</a>
+            </li>
+            <li class="package-item">
+                <h3>New Zealand</h3>
+                <p>10 days of hiking, biking, and exploring the stunning landscapes</p>
+                <a href="https://pickyourtrail.com/packages/new-york" target="_blank">Learn More</a>
+            </li>
+            <li class="package-item">
+                <h3>Tokyo, Japan</h3>
+                <p>5 days of culture, cuisine, and city life</p>
+                <a href="https://pickyourtrail.com/packages/tokyo" target="_blank">Learn More</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="package-type">
+        <h2>Couple Packages</h2>
+        <ul class="package-list">
+            <li class="package-item">
+                <h3>Paris, France</h3>
+                <p>Romantic getaway for 5 days in the City of Love</p>
+                <a href="https://pickyourtrail.com/packages/italy/honeymoon-tour-packages" target="_blank">Learn More</a>
+            </li>
+            <li class="package-item">
+                <h3>Venice, Italy</h3>
+                <p>4 days of gondola rides and exquisite dining</p>
+                <a href="https://pickyourtrail.com/packages/venice" target="_blank">Learn More</a>
+            </li>
+            <li class="package-item">
+                <h3>Maldives</h3>
+                <p>7 days of luxury and relaxation on beautiful beaches</p>
+                <a href="https://pickyourtrail.com/packages/maldives/honeymoon-tour-packages" target="_blank">Learn More</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="package-type">
+        <h2>Family Packages</h2>
+        <ul class="package-list">
+            <li class="package-item">
+                <h3>Orlando, Florida</h3>
+                <p>7 days of fun at theme parks and family attractions</p>
+                <a href="https://holidayz.makemytrip.com/holidays/india/package?id=56263&listingClassId=2&pkgType=FIT&fromCity=New%20Delhi&defaultPageForOnlineBookableFIT=true&intid=Seo_DOM_Holiday_pkg_name_click&affiliate=MMT&variantId=FLIGHT_1837436A&mcat=Romantic%2CShopping%2CFamily%2CAdventure&depDate=2024-12-31" target="_blank">Learn More</a>
+            </li>
+            <li class="package-item">
+                <h3>Tokyo Disneyland</h3>
+                <p>7 days of magic and adventure for the whole family</p>
+                <a href="https://japancitytour.com/tokyo-anime-amusement-park-tour-package/" target="_blank">Learn More</a>
+            </li>
+            <li class="package-item">
+                <h3>Great Barrier Reef, Australia</h3>
+                <p>6 days of snorkeling and exploring marine life</p>
+                <a href="https://www.veenaworld.com/world/great-barrier-reef-tour-packages/spl" target="_blank">Learn More</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Travel Packages</p>
+    <a href="#">Contact Us</a>
+    <a href="#">About Us</a>
+    <a href="#">Subscribe to our newsletter</a>
+</footer>
+</body>
+</html>
